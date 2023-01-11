@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Curriculum Vitae</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Début Header-->
+    <header id="header">
+        <!-- 
+            Titre trouvable en haut à gauche de la page, dans le header
+        -->
+        <h2 id="titre-cv">Mon Curriculum Vitae</h2>
+
+        <!-- Hamburger, coin de page -->
+        <nav role='navigation'>
+            <div id="menuToggle">
+                <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+                <input type="checkbox" />
+
+                <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+                <ul id="menu">
+                    <a href="./index.html">
+                        <li>Accueil</li>
+                    </a>
+                    <a href="./profil.html">
+                        <li>Mes Compétences</li>
+                    </a>
+                    <a href="./contact.html">
+                        <li>Me Contacter</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <!-- Fin Header-->
+
+    <!-- Début Main-->
+    <main id="main">
+
+        <!-- Premier article (article-gauche) qui représente la partie gauche de la page-->
+        <article id="article-g">
+
+            <!-- Titre de l'article/du contenu du cv -> ici métier-->
+            <h1 id="titre-article-g">DEVELOPPEUR WEB</h1>
+
+            <div id="paragraphe-1">
+                <!-- Plus petit h pour le début de l'article -->
+                <h2 id="h2-article-g">Plus qu'un métier...</h2>
+
+                <p style="float:left" id="p-img1">
+                    <img src="../img/index_img_1.jpg" alt="" id="img-index-1">
+                </p>
+                <!-- Contenu textuelle du CV et image  -->
+                <p id="text-article-g-1">
+                    <span class="lettrine">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                    pretium elementum velit vel
+                    blandit. Suspendisse vitae tellus eget augue semper condimentum vel eget dolor. Quisque maximus,
+                    eros ut viverra viverra, lorem eros convallis felis, a faucibus est purus quis nisl. Morbi viverra
+                    consequat egestas. Maecenas a vulputate tellus, aliquet iaculis purus. Suspendisse egestas turpis
+                    ullamcorper vehicula vestibulum. Suspendisse potenti. Aliquam eget neque consequat sapien vulputate
+                    euismod. Phasellus cursus dolor nunc, sit amet porta metus luctus ac. Integer in malesuada sem, at
+                    cursus eros. Aenean venenatis nunc ut est pulvinar sollicitudin. Aenean id porttitor ligula. Nam
+                    metus augue, dictum ac laoreet sed, finibus sed lectus.
+                </p>
+
+            </div>
+
+            <div>
+                <p id="text-article-g-1-5">
+                    Proin pulvinar, quam id pellentesque vehicula, massa ex iaculis quam, sed tincidunt neque justo nec
+                    nisl. Aliquam sapien nibh, pellentesque id tellus nec, efficitur ultricies ante. In et ex consequat,
+                    egestas massa eget, facilisis nulla. Donec molestie tincidunt nisl et molestie. Nullam hendrerit ac
+                    nunc vitae eleifend. Donec a mi sapien. Sed quis condimentum ligula, eget accumsan nisi. Sed
+                    efficitur molestie velit vel maximus. Pellentesque in dignissim erat. Maecenas scelerisque neque
+                    arcu. Fusce porttitor quis lectus quis gravida. Ut at fermentum libero. Duis et placerat ligula.
+                    Morbi pretium mi vitae rhoncus laoreet. Sed ut suscipit nisl. Vestibulum nisi diam, lacinia sit amet
+                    blandit ut, ultrices ac metus.
+
+                </p>
+            </div>
+
+
+            <!-- Ligne de séparation -->
+            <hr>
+
+
+
+            <div id="paragraphe-2">
+
+                <h2 id="h2-article-g-2">...Une passion</h2>
+
+                <p id="text-article-g-2">
+                    <span class="lettrine">A</span>enean tortor libero, malesuada sollicitudin convallis vitae,
+                    consequat vitae nisi. Proin imperdiet,
+                    massa sit amet tempus egestas, augue nisi lacinia felis, a placerat ante nulla in mauris. Mauris
+                    viverra eu orci sed pellentesque. Integer ac ullamcorper lectus. Vivamus et arcu quis ipsum
+                    sollicitudin elementum. Mauris vestibulum imperdiet nisi a vehicula. Nulla suscipit malesuada purus
+                    vitae malesuada. Donec rhoncus ipsum quis orci porttitor, id luctus neque scelerisque. Vestibulum
+                    ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In gravida molestie
+                    nisi eget bibendum. Maecenas pharetra hendrerit eros vitae accumsan. In hac habitasse platea
+                    dictumst.
+                    <br> <br>
+                    <img style="float:right" src="../img/index_img_2.jpg" alt="" id="img-index-2">
+                    Praesent in elit sagittis, imperdiet enim id, congue tortor. Vestibulum mattis ligula porta quam
+                    tempor sollicitudin at vitae risus. Mauris sed neque neque. Maecenas vitae luctus quam, ac
+                    pellentesque ligula. Mauris convallis velit lacus, quis elementum nisi laoreet et. Nullam
+                    sollicitudin urna id convallis rutrum. Proin eget imperdiet sem.
+
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel erat commodo, dictum lorem
+                    ac, semper sem. Mauris pulvinar leo at ornare tempus. Donec tincidunt lobortis lectus, in feugiat
+                    elit semper id. In dapibus mauris ut efficitur laoreet. Nunc quis lorem quis mi aliquam elementum a
+                    sed nibh. Sed lectus sem, hendrerit at lobortis id, molestie id nulla. Donec imperdiet et nunc ac
+                    consequat. Nam vestibulum augue enim.
+                </p>
+
+            </div>
+
+        </article>
+        <!-- Fin de l'article gauche-->
+
+
+
+        <!-- Début de l'article droit,
+            contenu : liste de lien de redirection 
+            vers réseaux sociaux et les diff catégories de compétences -->
+        <div id="article-d">
+            <div class="liens">
+                <h3>Liens</h3>
+                <a href=""> Github</a>
+                <a href=""> Linkedin</a>
+                <a href=""> Instragram</a>
+                <a href=""> Facebook</a>
+            </div>
+            <div class="liens">
+                <h3>Catégories</h3>
+                <a href=""> HTML/CSS</a>
+                <a href=""> Javascript</a>
+                <a href=""> PHP</a>
+                <a href=""> MySQL</a>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Fin Main-->
+
+    <footer id="footer">
+
+        <div id="div-footer">
+
+            <p id="p-watermark">© 2023 LEON PRODUCTION</p>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+
+<!-- Watermark © pour le footer -->

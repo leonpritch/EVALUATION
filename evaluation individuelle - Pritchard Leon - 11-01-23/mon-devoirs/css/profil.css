@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    src: url("../fonts/segoe-ui-4-cufonfonts-webfont.zip");
+}
+
+@viewport {
+    max-width: 1585px;
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: dimgray;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    font-size: small;
+    border: 1px solid black;
+    /*border-bottom: hidden;*/
+}
+
+
+#titre-cv {
+    margin-left: 20px;
+    color: white;
+}
+
+main {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    border: solid black 1px;
+    width: 100%;
+    height: auto;
+}
+
+#div-g {
+    width: 80%;
+    height: auto;
+    border-right: solid black 1px;
+    padding-left: 100px;
+    font-size: large;
+    padding-bottom: 100px;
+}
+
+
+#div-d {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.liens {
+    border: 1px solid black;
+    width: 200px;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.liens h3 {
+    text-align: center;
+    font-weight: normal;
+}
+
+.liens a {
+    text-decoration: none;
+    color: #03000e;
+    padding: 10px;
+    width: 80%;
+    border-bottom: 2px solid red;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top:auto;
+    /* on le colle en bas */
+    width: 100%;
+    height: 100px;
+    /* Hauteur du pied de page */
+    border: 1px solid black;
+    background-color: dimgrey;
+}
+
+label
+{
+	display: block;
+	width: 150px;
+	float: left;
+    margin: 18px;
+}
+
+input {
+    margin: 20px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    margin-bottom: -10px;
+}
+
+
+#p-watermark {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+
+
+/* HAMBURGER */
+a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: tomato;
+}
+
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -100px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's fade it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  #menu {
+    transform: none;
+    opacity: 0;
+
+    transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+}
